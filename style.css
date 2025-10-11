@@ -139,6 +139,52 @@ nav img {
     font-size: 16px !important;
 }
 
+.orta {
+    height: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.orta img{
+    width: 170px!important;
+    padding-bottom: 20px;
+}
+
+.orta ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.navbarmenu {
+    padding: 20px;
+    top: 0;
+    right: -70%;
+    background-color: #fff;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.navbarmenu li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.navbarmenu li a{
+    color: black;
+    font-size: 16px;
+}
+
+.navbarmenu .fa-light{
+    font-size: 25px;
+    padding-right: 10px;
+}
 /* Desktop görünüşü */
 @media only screen and (min-width: 768px) {
     .mobile {
@@ -198,6 +244,7 @@ nav img {
     .info-p2 {
         font-size: 16px !important;
     }
+
 }
 
 @media only screen and (max-width: 245px) {
