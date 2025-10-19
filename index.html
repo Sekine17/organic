@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="shortcut icon" href="grocery-cart.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
@@ -39,12 +41,10 @@
         <i class="fa-light fa-user"></i>
       </div>
     </nav>
-
     <nav class="mobile">
       <img src="img/img/logo.svg" alt="Logo">
       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
-
     <div class="navbarmenu" id="navmenu">
       <span><i class="fa-solid fa-xmark" onclick="closemenu()"></i></span>
       <div class="orta">
@@ -133,7 +133,95 @@
       </div>
     </div>
   </header>
-
+  <div class="category-hissesi container">
+    <div class="basliq1">
+      <div>
+        <h2>Category</h2>
+      </div>
+      <div class="basliq-2">
+        <a href="#">View All</a>
+        <div class="icons">
+          <div>
+            ‹
+          </div>
+          <div>
+            ›
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-hissesi">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-1.jpg" alt="">
+            <h4>Fruits</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-2.jpg" alt="">
+            <h4>Sweets</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-3.jpg" alt="">
+            <h4>Veges</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-4.jpg" alt="">
+            <h4>Beverages</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-5.jpg" alt="">
+            <h4>Meat Products</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-6.jpg" alt="">
+            <h4>Greens</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-7.jpg" alt="">
+            <h4>Eggs</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-8.jpg" alt="">
+            <h4>Breads</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-1.jpg" alt="">
+            <h4>Fruits</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-2.jpg" alt="">
+            <h4>Sweets</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-3.jpg" alt="">
+            <h4>Veges</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-4.jpg" alt="">
+            <h4>Beverages</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-5.jpg" alt="">
+            <h4>Meat Products</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-6.jpg" alt="">
+            <h4>Greens</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-7.jpg" alt="">
+            <h4>Eggs</h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img/category-thumb-8.jpg" alt="">
+            <h4>Breads</h4>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
 
   <script>
     let navmenu = document.getElementById('navmenu');
@@ -145,6 +233,42 @@
     function closemenu() {
       navmenu.style.right = '-70%'
     }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      breakpoints: {
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        400: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        600: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        800: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1030: {
+          slidesPerView: 7,
+          spaceBetween: 20,
+        },
+        1025: {
+          slidesPerView: 8,
+          spaceBetween: 20,
+        }
+      }
+    });
   </script>
 </body>
 
