@@ -235,7 +235,7 @@ nav img {
 
 /*categoty hissesi basladi*/
 .category-hissesi {
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .basliq1 {
@@ -282,8 +282,8 @@ nav img {
 }
 
 .swiper-slide img {
-    height: 135px;
-    width: 135px;
+    height: 140px;
+    width: 140px;
     border-radius: 50%;
 }
 
@@ -392,7 +392,7 @@ nav img {
 
 }
 
-@media only screen and (max-width: 245px) {
+@media only screen and (max-width: 255px) {
     .header-text h2 {
         margin-bottom: 0px;
         font-size: 30px !important;
@@ -417,7 +417,7 @@ nav img {
         font-size: 45px;
     }
 }
-@media only screen and (max-width: 270px) {
+@media only screen and (max-width: 314px) {
     .basliq1 a {
     display: none;
 }
