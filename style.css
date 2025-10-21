@@ -23,7 +23,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:auto;
+    height: auto;
     background: url('img/img/banner-1.jpg') 47% 50%/cover no-repeat;
 }
 
@@ -98,20 +98,28 @@ nav img {
 
 .links a {
     color: white;
-    padding: 15px 30px;
+    padding: 20px 30px;
     border-radius: 30px;
     font-size: 16px;
     letter-spacing: 1px;
     text-align: center;
     display: inline-block;
+    transition: 0.5s;
 }
 
 .links a:first-child {
     background-color: #6bb252;
 }
 
+.links a:first-child:hover{
+    background-color: #f7a422;
+}
+
 .links a:last-child {
     background-color: #212529;
+}
+.links a:last-child:hover {
+    background-color: #424649;
 }
 
 .info {
@@ -197,11 +205,11 @@ nav img {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    height: 170px;
+    height:auto;
     text-align: center;
     font-size: 16px;
     color: white;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 .ilk div {
@@ -287,18 +295,19 @@ nav img {
     border-radius: 50%;
 }
 
-.icons{
+.icons {
     display: flex;
     font-size: 25px;
     gap: 15px;
     cursor: pointer;
 }
 
-.basliq-2{
+.basliq-2 {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 /*categoty hissesi bitdi*/
 
 
@@ -390,7 +399,8 @@ nav img {
         align-items: start;
     }
 
-    .h5-p p, .h5-p h5 {
+    .h5-p p,
+    .h5-p h5 {
         text-align: left;
     }
 
@@ -421,8 +431,9 @@ nav img {
         font-size: 45px;
     }
 }
+
 @media only screen and (max-width: 314px) {
     .basliq1 a {
-    display: none;
-}
+        display: none;
+    }
 }
